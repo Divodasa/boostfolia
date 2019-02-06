@@ -779,6 +779,10 @@ nav {
     .clients__slider {
         padding: 20px 0!important;
     }
+    ._values img {
+        width: 100%;
+        height: 1px;
+    }
 }
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
