@@ -64,17 +64,27 @@ nav {
 nav {
     margin: auto 0;
 }
-.carousel-slogan h1:after {
-    border-bottom: none;
-}
 
 /*================Main__carousel=============*/
 
+.carousel-caption h1 {
+    margin: 0;
+}
+.carousel-slogan h1:after {
+    border-bottom: none;
+}
 .carousel-caption {
-    display: grid;
-    align-content: space-between;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    padding-bottom: 0;
+}
+.carousel-bottom {
+    position: absolute;
+    bottom: 0;
+}
+.carousel-bottom h4 {
+    margin-bottom: 0;
 }
 .carousel-caption h1,
 .carousel-caption p,
@@ -86,7 +96,7 @@ nav {
     text-shadow: 2px 2px black;
 }
 .carousel-bottom img{
-    margin-bottom: 2%;
+    margin-bottom: 20px;
 }
 .carousel-caption h4 {
     font-size: 12px;
@@ -209,14 +219,13 @@ nav {
     background: url("../img/video.jpg") center no-repeat;
     width: 50%;
 }
-.video a {
-    display: block;
-    text-align: center;
-    margin-top: 26%;
-}
 .arrow {
     text-align: center;
-    margin: auto 0 auto 0;
+}
+.video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*===================Our_works================*/
@@ -397,6 +406,14 @@ nav {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     margin-bottom: 85px;
+    display: flex;
+}
+._values {
+    width: 100%;
+}
+._values img {
+    width: 100%;
+    height: 1px;
 }
 .skill_values h3 {
     font-family: 'Roboto', sans-serif;
@@ -408,10 +425,6 @@ nav {
 .names,
 ._values {
     margin-right: 15px;
-}
-.skill_values {
-    display: flex;
-    width: min-content;
 }
 .nospace {
     white-space: nowrap;
@@ -489,7 +502,6 @@ nav {
     height: 425px;
     background-color: #ececec;
     margin-right: 21px;
-    /*margin: 0 auto;*/
 }
 .info_block:last-of-type {
     margin-right: 0;
@@ -688,9 +700,6 @@ nav {
     .gallery img {
         height: 100%;
     }
-    ._values {
-        width: -moz-min-content;
-    }
 }
 
 /*================Media__requests=============*/
@@ -698,15 +707,13 @@ nav {
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 2560px) {
     .carousel-caption h1 {
-        margin-top: 50px;
         font-size: 62px;
     }
     .carousel-caption p {
         font-size: 21px;
-        margin-bottom: 10rem;
     }
     .carousel-caption h4 {
-        font-size: 14px;
+        font-size: 15px;
     }
     .wrapper__sp {
         width: 85%;
@@ -717,11 +724,7 @@ nav {
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1440px) {
     .carousel-caption h1 {
-        margin-top: -90px;
         font-size: 42px;
-    }
-    .carousel-caption p {
-        margin-bottom: 2rem;
     }
     @-moz-document url-prefix() {
         .wrapper__special {
@@ -733,7 +736,6 @@ nav {
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
     .carousel-caption h1 {
-        margin-top: 0;
         font-size: 35px;
     }
     .carousel-caption h4 {
@@ -801,9 +803,6 @@ nav {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-    .carousel-caption p {
-        margin-bottom: -1rem;
-    }
     .top__nav {
         font-size: 12px;
     }
@@ -824,9 +823,6 @@ nav {
     }
     .person_skills h2 {
         margin-top: 70px;
-    }
-    .w100 {
-        display: none;
     }
     .who_we_are {
         margin: 0 auto 100px auto;
@@ -892,11 +888,15 @@ nav {
     .carousel-bottom h4 {
         font-size: 12px;
     }
+    .carousel-bottom img{
+        margin-bottom: 10px;
+    }
     .carousel-caption h1 {
         font-size: 27px;
     }
     .carousel-caption p {
         font-size: 16px;
+        margin-bottom: -4rem;
     }
     .about__sections {
         flex-direction: column;
@@ -1018,13 +1018,16 @@ nav {
         font-size: 12px;
     }
     .carousel-bottom img {
-        height: 17px;
+        height: 31px;
     }
     .video {
         height: 230px;
     }
     .play p {
         width: 95%;
+    }
+    .arrow img {
+        width: 60%;
     }
     .video {
         background: url("../img/video.jpg") round;
@@ -1082,23 +1085,29 @@ nav {
     }
     .carousel-caption h1 {
         font-size: 21px;
-        margin-bottom: 0;
     }
-    .carousel-bottom h4 {
-        font-size: 8px;
-    }
-    .carousel-bottom,
-    .space {
+    .carousel-bottom {
         display: none;
     }
-    .carousel-slogan {
-        margin-top: 21%;
+    .carousel-caption p {
+        font-size: 12px;
     }
     .carousel-slogan h1 {
         margin-top: 0;
     }
     .movie {
         width: 90%
+    }
+    .skill_values,
+    .skill_values h3 {
+        font-size: 12px;
+    }
+    .skill_values {
+        margin-bottom: 18px;
+    }
+    .names,
+    ._values {
+        margin-right: 6px;
     }
     .slogan {
         font-size: 22px;
@@ -1125,10 +1134,6 @@ nav {
     .clients__slider {
         padding: 20px 0!important;
     }
-    ._values img {
-        width: 5em;
-        height: 1px;
-    }
     .features {
         grid-template-columns: 1fr;
     }
@@ -1136,10 +1141,11 @@ nav {
         width: 96%;
     }
 }
+
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-    .w50 {
-        display: none;
+@media only screen and (min-width : 670px) {
+    .carousel-slogan p {
+        margin-bottom: -5rem;
     }
 }
 
@@ -1173,5 +1179,8 @@ nav {
     }
     .variant {
         width: 346px;
+    }
+    .person_skills {
+        padding: 0 20% 0 10%;
     }
 }
