@@ -782,9 +782,6 @@ nav {
         .person_features {
             margin-right: 0;
         }
-        .person_skills {
-            margin-left: -12px;
-        }
         ._values img {
             width: 100%;
             height: 1px;
@@ -866,9 +863,6 @@ nav {
     @-moz-document url-prefix() {
         .person_features {
             margin-right: 15px;
-        }
-        .person_skills {
-            margin-left: 27px;
         }
     }
 }
