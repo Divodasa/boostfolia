@@ -694,6 +694,82 @@ nav {
     transition: .5s;
 }
 
+/*================Get in touch================*/
+.in_touch {
+    margin: 0 auto;
+}
+.in_touch h1 {
+    margin-top: 80px;
+}
+.in_touch p {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #8e8e8e;
+    width: 80%;
+    margin: 25px auto 70px auto;
+    text-align: center;
+}
+.in_touch .form p {
+    color: #595959;
+    margin: 0;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+p.textarea {
+    margin: 50px 0 0 0;
+}
+textarea {
+    font-family: sans-serif;
+    font-size: 21px;
+    width: 100%;
+    height: 100px;
+    border: none;
+    border-bottom: 1px solid #adadad;
+}
+.red {
+    color: #ff5417;
+}
+input {
+    font-family: sans-serif;
+    font-size: 21px;
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-bottom: 1px solid #b4b4b4;
+}
+
+.form__inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.form__inputs div {
+    padding: 0 0 20px 0;
+}
+.form__inputs div:first-of-type {
+    padding-right: 15px;
+}
+.form__inputs div:last-of-type {
+    padding-left: 15px;
+}
+.button_block {
+    padding-bottom: 80px;
+    text-align: center;
+}
+.button_block button {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    background: #ff7547;
+    border: none;
+    margin: 60px auto 0 auto;
+    width: 200px;
+    height: 50px;
+}
+
 /*============Exceptions for firefox==========*/
 
 @-moz-document url-prefix() {
@@ -793,8 +869,14 @@ nav {
             width: 75%;
         }
     }
+    .in_touch h1 {
+        margin-top: 45px;
+    }
     .person_icon {
         margin: 50px auto 30px auto;
+    }
+    .button_block {
+        padding-bottom: 45px;
     }
 }
 
@@ -997,6 +1079,21 @@ nav {
     .block__bottom {
         padding: 0 25px 0 25px;
     }
+    .form__inputs {
+        grid-template-columns: 1fr;
+    }
+    .form__inputs div:first-of-type {
+        padding-right: 0;
+    }
+    .form__inputs div:last-of-type {
+        padding-left: 0;
+    }
+    .in_touch p {
+        margin: 25px auto 35px auto;
+    }
+    .button_block button {
+        margin: 30px auto 0 auto;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -1176,5 +1273,8 @@ nav {
     }
     .person_skills {
         padding: 0 20% 0 10%;
+    }
+    .in_touch {
+        width: 90%;
     }
 }
