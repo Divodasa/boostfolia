@@ -401,13 +401,15 @@ nav {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     color: #8e8e8e;
-    margin: 25px auto 40px auto;
+    margin: 25px auto 40px 0;
+    max-width: 525px;
 }
 .skill_values {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     margin-bottom: 85px;
     display: flex;
+    flex-direction: column;
 }
 ._values {
     width: 100%;
@@ -423,12 +425,28 @@ nav {
     font-weight: bold;
     margin-bottom: .4rem;
 }
-.names,
-._values {
-    margin-right: 15px;
-}
-.nospace {
+.no_space {
     white-space: nowrap;
+}
+
+.skills_graphic,
+.skills_illustration,
+.skills_sketches,
+.skills_after_effects {
+    display: flex;
+}
+.skill_values img {
+    height: 1px;
+    margin-bottom: 3px;
+}
+.skill_values div h3 {
+    width: 120px;
+}
+.skill_values div img {
+    width: 100%;
+}
+.skill_values div div:last-child {
+    padding-left: 13px;
 }
 
 /*================Some features===============*/
@@ -840,6 +858,11 @@ input {
         width: 85%;
         margin: 0 auto 0 auto;
     }
+    @-moz-document url-prefix() {
+        .skill_values h3 {
+            font-size: 13px;
+        }
+    }
 }
 
 /* Large Devices, Wide Screens */
@@ -1244,6 +1267,9 @@ input {
     .skill_values h3 {
         font-size: 12px;
     }
+    .skill_values div h3 {
+        width: 105px;
+    }
     .skill_values {
         margin-bottom: 18px;
     }
@@ -1281,6 +1307,11 @@ input {
     }
     .plan_wrapper {
         width: 96%;
+    }
+    @-moz-document url-prefix() {
+        .skill_values h3 {
+            font-size: 11px;
+        }
     }
 }
 
