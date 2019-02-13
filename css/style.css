@@ -809,6 +809,9 @@ input {
 .locate_on_map img {
     margin: 8px 0 0 7px;
 }
+.map {
+    margin: 0 6px;
+}
 .logo {
     display: grid;
     justify-content: center;
