@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
     <title>Exercise</title>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <!-- General_CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Narrow_slider -->
@@ -521,9 +522,11 @@
         <section class="location">
             <div class="locate_on_map">
                 <h3>Locate on map</h3>
-                <a href="#" class="map"><img src="img/down.png" alt="arrow"></a>
+                <div id="button_map">
+                    <img src="img/down.png" alt="arrow">
+                </div>
             </div>
-            <div class="map">
+            <div id="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2840.500296213896!2d33.51901493734938!3d44.60724502924464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x409524c8606e4cc1%3A0x5ee6eb45b26e6078!2zMjUg0J7QtNC10YHRgdC60LDRjyDRg9C7Liwg0KHQtdCy0LDRgdGC0L7Qv9C-0LvRjCA5OTAyNg!5e0!3m2!1sru!2sru!4v1550059080848" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </section>

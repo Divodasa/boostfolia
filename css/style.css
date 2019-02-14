@@ -806,10 +806,23 @@ input {
     letter-spacing: 2px;
     margin-bottom: 0;
 }
-.locate_on_map img {
-    margin: 8px 0 0 7px;
+#button_map {
+    cursor: pointer;
 }
-.map {
+.locate_on_map button {
+    cursor: pointer;
+    background: #030a0d;
+    border: none;
+    margin: 4px 0 0 7px;
+}
+#map {
+    display: none;
+    transition: 3s;
+}
+.locate_on_map img {
+    margin-top: 11px;
+}
+#map {
     margin: 0 6px;
 }
 .logo {
@@ -1242,7 +1255,9 @@ input {
     }
     .locate_on_map img {
         width: 75%;
-        margin: -4px 0 0 -1px;
+    }
+    .locate_on_map img {
+         margin-top: 0;
     }
 }
 
