@@ -14,10 +14,6 @@ li {
 body {
     /*font-family: 'Lato', sans-serif;*/
     font-family: 'Audiowide', cursive;
-    /*font-family: 'Nunito', sans-serif;*/
-    /*font-family: 'Roboto', sans-serif;*/
-    /*font-family: 'Roboto Condensed', sans-serif;*/
-    min-width: 320px;
 }
 .wrapper {
     display: flex;
